@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: */tags/
-
-sitemap: https://fernando.andreu.info/sitemap.xml

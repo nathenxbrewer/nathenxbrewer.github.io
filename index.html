@@ -33,8 +33,13 @@
 
 
     <script>
-        function scrollToElement(element) {
-            document.getElementById(element).scrollIntoView({ behavior: 'smooth' });
+        function scrollToElement(elementid, offset) {
+            const id = elementid;
+            const yOffset = offset;
+            const element = document.getElementById(id);
+            const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+            window.scrollTo({ top: y, behavior: 'smooth' });
         }
     </script>
 </body>
